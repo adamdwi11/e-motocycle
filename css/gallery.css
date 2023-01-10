@@ -20,13 +20,7 @@
     height: auto;
     width: 400px;
     object-fit: cover;
-   
-
 }
-
-
-
-
 
 .title{
     padding: 50px;
@@ -38,9 +32,12 @@
 }
 
 @media screen and (max-width:600px){
-    img{
-        
+    img{   
         width: 300px;
         object-fit: cover;
+    }
+
+    #image-container img{
+        width: 300px;
     }
 }

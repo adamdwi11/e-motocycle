@@ -312,8 +312,7 @@ div.content {
     flex-wrap: wrap;
     margin-top: 50px;
     margin: 0 130px;
-    padding: 0 80px;
-
+    padding: 0 8px;
 }
 
 .topic {
@@ -357,7 +356,6 @@ div.content {
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
-
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -367,9 +365,8 @@ div.content {
 
 /* Footer */
 
-
 #footer {
-
+    width: 100%;
     display: flex;
     align-items: center;
     background-color: #161042;
@@ -388,9 +385,6 @@ div.content {
 .sosmed {
     width: 15%;
     display: flex;
-
-
-
 }
 
 .sosmed img {
@@ -445,7 +439,7 @@ div.content {
     }
 
     .sidebar a {
-        float: left;
+        float: center;
     }
 
     div.content {
@@ -474,13 +468,11 @@ div.content {
         position: relative;
     }
 
-    #nav a,
-    .product {
+    #nav a, .product {
         text-align: center;
     }
 
-    .product,
-    #nav a {
+    .product, #nav a {
         border-bottom: solid 1px grey;
     }
 
@@ -491,12 +483,14 @@ div.content {
     #product-content {
         width: 100%;
         position: relative;
+    }
 
+    .news-box {
+        width: 300px;
     }
 
     .sidebar a {
-        text-align: center;
-        float: none;
+        float: left;
     }
 
 }

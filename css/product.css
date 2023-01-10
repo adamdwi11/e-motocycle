@@ -81,9 +81,7 @@
 }
 
 .box-product:hover{
-
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-      
 }
 
 #box-container{
@@ -91,7 +89,6 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 50px;
-    margin: 0 130px;
     padding: 0 80px;
 }
 
