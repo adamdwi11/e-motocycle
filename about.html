@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/reserve.css">
+    <link rel="shortcut icon" href="./asset/elfa_logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+
+
+    <title>ELFA Motorcycle Club | Dealer Sepeda Motor Terpercaya </title>
+    <script src="./js/jquery.js"></script>
+</head>
+
+
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./asset/elfa_logo.png" alt=""></a>
+        </div>
+        <div class="text-header">
+            ELFA Motorcycle Club
+        </div>
+    </div>
+
+    <!-- NavBar -->
+
+    <div id="nav">
+        <a href="./index.html">Home</a>
+        <div class="product-dropdown">
+            <Div class="product">
+                Products
+            </Div>
+            <div id="product-content">
+                <a href="./kawasako.html">Kawasaki</a>
+                <a href="./vixian.html">Vixian</a>
+            </div>
+        </div>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./reserve.html">Reserve</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./about.html">About Us</a>
+    </div>
+
+    <!-- Company Info -->
+
+    <div class="sidebar">
+        <a class="active" href="#home">Article</a>
+        <a href="#news">Event</a>
+        <a href="#contact">Gallery Photo</a>
+        <a href="#about">Our Client</a>
+        <a href="#about">Login</a>
+    </div>
+
+    <!-- Motorcycle Display -->
+
+    <div class="content">
+        <div id="form-container">
+            <div id="form-outer">
+
+                <div class="form-title">
+                    <h3>Pesan Kendaraan Anda Sekarang</h3>
+                </div>
+
+                <div class="form-content-item">
+                    <div class="form-icon">
+                        <img src="./asset/icons8-box-64.png" alt="box">
+                    </div>
+
+                    <div class="form-text">
+                        Pengiriman Cepat dan Mudah
+                    </div>
+                </div>
+
+                <div class="form-content-item">
+                    <div class="form-icon">
+                        <img src="./asset/icons8-verified-badge-64.png" alt="verified">
+                    </div>
+
+                    <div class="form-text">
+                        Perlindungan Ekstra Gratis
+                    </div>
+                </div>
+
+                <div class="form-content-item">
+                    <div class="form-icon">
+                        <img src="./asset/icons8-online-support-64.png" alt="online-support">
+                    </div>
+
+                    <div class="form-text">
+                        Dukungan Online Selama Pengiriman
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="form-inner">
+                <form action="" onsubmit="return submitForm(this)">
+
+                    <div class="form-title">
+                        <h3>Masukkan Info Kontak Anda:</h3>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-input" type="text" name="name" id="name">
+                        <label class="form-label" for="name">Name</label>
+                    </div>
+
+
+                    <div class="form-group">
+                        <input class="form-input" type="tel" name="phone" id="phone">
+                        <label class="form-label" for="phone">Phone Number</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-input" name="address" id="address" cols="50" rows="3"></textarea>
+                        <label class="form-label" for="address">Address</label>
+                    </div>
+
+                    <div class="choose-title">Choose Your Motorcycle:</div>
+                    <div class="form-group">
+                        <select class="form-input" name="motor" id="motor"
+                            onchange="dropdownChange(this,document.getElementById('motorName'))">
+                            <option value="" hidden>------ Choose Your Motorcycle ------</option>
+                            <option value="Kawasako">Kawasaki</option>
+                            <option value="Vixian">Vixian</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <select class="form-input" name="motorName" id="motorName">
+                            <!-- options will be made at formValidation.js  -->
+                        </select>
+                    </div>
+                    <div class="choose-title">Quantity:</div>
+
+                    <div class="form-group">
+                        <input class="input_num" type="number" name="qty" id="qty" min="1" max="10">
+                    </div>
+                    <div class="form-group">
+                        <div class="colors">
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="color" value="black">
+                                        <span class="swatch"></span> Black
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="color" value="blue">
+                                        <span class="swatch"></span> Blue
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="color" value="red">
+                                        <span class="swatch"></span> Red
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form-group-btn">
+                        <button class="btn-submit" type="submit">Submit Form</button>
+                    </div>
+            </div>
+
+
+
+            </form>
+        </div>
+
+    </div>
+    <!-- Latest News -->
+
+
+
+    <!-- Footer -->
+
+    <div id="footer">
+        <div class="text-footer">
+            Copyright &copy; 2023 - ELFA Motorcycle Club - All Rights Reserved
+        </div>
+
+        <div class="sosmed">
+            <!-- <div class="sosmedItem">
+                <a href="https://www.facebook.com/profile.php?id=100069020175227" target="_blank"><img src="./asset/Daco_1091.png" alt="facebook"></a>
+            </div> -->
+            <div class="sosmedItem">
+                <a href="https://www.instagram.com/ELFA_motorcycle_club/" target="_blank"><img
+                        src="./asset/Daco_818.png" alt="instagram"></a>
+            </div>
+            <div class="sosmedItem">
+                <a href="https://twitter.com/ELFA_motorcycle_club" target="_blank"><img
+                        src="./asset/toppng.com-twitter-logo-vector-grey-576x468.png" alt="twitter"></a>
+            </div>
+        </div>
+
+        <div class="right-text">
+            ELFA Motorcycle Club
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#image-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-evenly;
+    
+}
+
+.item{
+    margin: 10px;
+}
+
+#image-container img{
+    height: auto;
+    width: 400px;
+    object-fit: cover;
+   
+
+}
+
+
+
+
+
+.title{
+    padding: 50px;
+    background-color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:600px){
+    img{
+        
+        width: 300px;
+        object-fit: cover;
+    }
+}

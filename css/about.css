@@ -1,0 +1,64 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #161042;
+  position: fixed; 
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  padding: 14px 16px;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a:hover {
+  background-color: white;
+  color: #161042;
+}
+
+.sidebar a, .login{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  padding: 14px 16px;
+  text-align: left;
+}
+
+#login a{
+  background-color: white;
+  color: #161042;
+}
+
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
