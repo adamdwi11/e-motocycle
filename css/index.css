@@ -17,23 +17,18 @@ body {
 .images img {
     width: 80vw;
     height: 45vw;
-
-
 }
 
 #image-slider-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 20px 0;
-
-
+    margin: 0;
 }
 
 #image-slider {
     overflow: hidden;
     position: relative;
-
 }
 
 #slider {
@@ -43,16 +38,16 @@ body {
 
 button {
     padding: 12px 24px;
-    color: black;
+    color: #161042;
     border: 0;
     background-color: #f8f8f8;
-
+    border-radius: 5px;
     font-size: 30px;
 
 }
 
 button:hover {
-    background-color: black;
+    background-color: #161042;
     color: white;
     cursor: pointer;
 }
@@ -65,8 +60,6 @@ button:hover {
     padding: 20px 35px;
     display: flex;
     align-items: flex-end;
-
-
 }
 
 .header img {
@@ -143,12 +136,11 @@ div.content {
 }
 
 .content-container {
-
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 100px 0;
-    background: url(../asset/grey-glow-29350-1920x1080.jpg);
+    padding: 20px 0;
+    background: url(../asset/grey-glow-29350-1920x1080.jpg) no-repeat;
     background-position: center;
 }
 
@@ -245,7 +237,6 @@ div.content {
 
 #display-container {
     display: flex;
-
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 50px;
@@ -292,7 +283,7 @@ div.content {
 /* Separator */
 
 .separator {
-    background-color: rgb(184, 182, 182);
+    background-color: #161042;
 
     height: 5vh;
 }

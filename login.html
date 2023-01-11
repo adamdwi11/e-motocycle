@@ -5,18 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/profile.css">
     <link rel="shortcut icon" href="./asset/bora-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
-
-
-    <title>BORA MOTORCYCLE CLUB | Dealer Sepeda Motor Terpercaya </title>
-    <script src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
+    <title>BORA MOTORCYCLE CLUB | Kawasaki </title>
+    <title>Document</title>
 </head>
-
-
 
 <body>
 
@@ -59,39 +56,34 @@
         </div>
     </div>
 
+    <!-- Products -->
+    <div id="box-container">
+        <div class="box-login">
+            <div id="form-inner">
+                <form action="" onsubmit="return loginForm(this)">
 
-    <!-- Sidebar -->
+                    <div class="form-title">
+                        <p>Member Login</p>
+                    </div>
 
-    <div class="sidebar">
-        <a href="./article.html">Article</a>
-        <a href="./gallery.html">Gallery Photo</a>
-        <a href="./customer-relationships.html">Customer Relationship</a>
-    </div>
+                    <div class="form-group">
+                        <input class="form-input" type="text" name="username" id="username">
+                        <label class="form-label" for="username">Username</label>
+                    </div>
 
 
-    <!-- Company Info -->
-    <div class="content">
-        <div class="content-container">
-            <div class="content-image">
-                <img src="./asset/images/satu-vespa-sejuta-saudara.jpg" alt="">
-            </div>
-            <div class="content-profile">
-                <br>
-                <h3>Profil singkat BMC</h3>
-                <br>
-                &nbsp; BORA Motorcycle Club adalah sebuah club atau komunitas bagi para pecinta motor
-                vespa matic. BORA MOTORCYCLE CLUB juga menyediakan kebutuhan-kebutuhan berkendara
-                pagi para pengendara vespa matic mulai dari helm, jaket hingga accessoris lainya. BORA MOTOCYCLE CLUB didirikan pertama kali
-                pada 12 September 2020 di Tangerang.
-                
-                Peran organisasional BMC (BORA MOTOCYCLE CLUB) adalah sebagai pelaksana
-                koordinasi dari aktivitas dan pertukaran informasi seluruh klub anggotanya dimana peran
-                dasar dari BMC (BORA MOTOCYCLE CLUB) adalah penguatan jaringan dan rasa
-                persaudaraan, terutama diantara klub anggota
+                    <div class="form-group">
+                        <input class="form-input" type="password" name="password" id="password">
+                        <label class="form-label" for="password">Password</label>
+                    </div>
+
+                    <div class="form-group-btn">
+                        <button class="btn-submit" type="submit">Login</button>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="separator"></div>
-        <!-- Footer -->
+    </div>
 
         <div id="footer">
             <div class="text-footer">
@@ -100,11 +92,15 @@
 
             <div class="sosmed">
                 <div class="sosmedItem">
-                    <a href="https://www.instagram.com/ELFA_motorcycle_club/" target="_blank"><img
-                            src="./asset/Daco_818.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100069020175227" target="_blank"><img
+                            src="./asset/Daco_1091.png" alt="facebook"></a>
                 </div>
                 <div class="sosmedItem">
-                    <a href="https://twitter.com/ELFA_motorcycle_club" target="_blank"><img
+                    <a href="https://www.instagram.com/ELFA.mc/" target="_blank"><img src="./asset/Daco_818.png"
+                            alt="instagram"></a>
+                </div>
+                <div class="sosmedItem">
+                    <a href="https://twitter.com/ELFA.mc" target="_blank"><img
                             src="./asset/toppng.com-twitter-logo-vector-grey-576x468.png" alt="twitter"></a>
                 </div>
             </div>
@@ -114,9 +110,8 @@
             </div>
         </div>
 
-        <script src="./js/index.js"></script>
 
-
+        <script src="./js/formValidation.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 
  #banner-img{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../asset/kawasako/thumb-1920-613763.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../asset/products/helm-2.jpg);
     height: 50vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
   }
 
   #banner-img2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../asset/vixian/download.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../asset/products/thumb-1920-442455.jpg);
     height: 50vw;
     background-position: center;
     background-repeat: no-repeat;

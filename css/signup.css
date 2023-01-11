@@ -1,0 +1,116 @@
+.box-signup{
+    padding: 35px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #f5f5f5;
+    margin: 15px 0;
+    font-family: 'manrope', sans-serif;
+}
+
+.box-signup:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#box-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 80px;
+}
+
+
+.form-group{
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form{
+    max-width: 446px;
+}
+
+.form-group-btn{
+    margin: 40px 0;
+}
+
+.form-group-btn:hover .btn-submit{
+    color: #161042;
+    background-color: white;
+}
+
+.btn-submit{
+    transition: .2s ease-in;
+    border: 1px solid #161042;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    display: block;
+    background-color: #161042;
+    color: white;
+    border-radius: 8px;
+    width: 100%;    
+}
+
+.form-input{
+    display: block;
+    width: 100%;
+    padding: 18px 28px;
+    border:1px solid rgba(19,20,21,.3);
+    border-radius: 4px;
+}
+
+/* if   input not null */
+.form-input[value]:not([value=""])~ .form-label{
+    top: 5px;
+    transform: translateY(0);
+    font-size: 10px;
+    color: rgba(19,20,21,.5);
+}
+
+/* if input focused and null */
+.form-input:focus~.form-label{
+    top: 5px;
+    transform: translateY(0);
+    font-size: 10px;
+    color: rgba(19,20,21,.5);
+}
+/* label original style */
+.form-label{
+    position: absolute;
+   top: 50%;
+   left: 28px;
+    color: rgba(19,20,21,.5);
+    transform: translateY(-50%);
+    font-family: 'manrope',sans-serif;
+    transition: .2s ease all;
+}
+
+.form-title{
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    text-align: center;
+    padding: 0 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+#form-inner .form-title h3{
+    font-size: 36px;
+    text-align: left;
+    padding: 0;
+}
+#form-outer{
+    margin: 60px 0;
+    width: 40%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 100px;
+   
+}

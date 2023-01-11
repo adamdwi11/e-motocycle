@@ -10,22 +10,22 @@ window.addEventListener('load', function () {
   }
 })
 
-//create options on motorName according to selected motor (Kawasako | Vixian)
+//create options on motorName according to selected motor (helm | jacket)
 function dropdownChange(motor, motorName) {
-  var kawasako = ['Kawasako x56', 'Kawasako x57', 'Kawasako Black Sun', 'Kawasako Cross950', 'Kawasako Monster-21', 'Kawasako 21SF'];
-  var vixian = ['Vixian XF262', 'Vixian CF300', 'Vixian Lumiere160', 'Vixian MT-1260', 'Vixian MT-V4', 'Vixian SP01'];
+  var helm = ['Heritage Bianco FF', 'Heritage Bianco HF', 'Astone England', 'Helm Honda', 'Aria Classic', 'Visco Black Series'];
+  var jacket = ['Rompi V01', 'Rompi V02', 'Rompi V03', 'Jacket Veltics', 'Rompi V03', 'Rompi V03'];
 
   switch (motor.value) {
-    case 'Kawasako':
+    case 'Helm':
       motorName.options.length = 0;
-      for (i = 0; i < kawasako.length; i++) {
-        createOption(motorName, kawasako[i], kawasako[i]);
+      for (i = 0; i < helm.length; i++) {
+        createOption(motorName, helm[i], helm[i]);
       }
       break;
-    case 'Vixian':
+    case 'Jacket':
       motorName.options.length = 0;
-      for (i = 0; i < vixian.length; i++) {
-        createOption(motorName, vixian[i], vixian[i]);
+      for (i = 0; i < jacket.length; i++) {
+        createOption(motorName, jacket[i], jacket[i]);
       }
       break;
     default:
@@ -118,5 +118,25 @@ function countName(name) {
   if (count < 2) {
     return false;
   }
+  return true;
+}
+
+//for login check value
+function loginForm(form) {
+  if (!nullForm(form.username.value, form.password.value)) {
+    alert("No blank fields!");
+    return false;
+  }
+  alert("Login success !!")
+  return true;
+}
+
+//for signup check value
+function signUpForm(form) {
+  if (!nullForm(form.firstname.value, form.lastname.value, form.email.value, form.username.value, form.password.value)) {
+    alert("No blank fields!");
+    return false;
+  }
+  alert("Sign-up success !!")
   return true;
 }

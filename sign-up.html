@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./asset/bora-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/signup.css">
+    <title>BORA MOTORCYCLE CLUB | Kawasaki </title>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./asset/bora-logo.png" alt=""></a>
+        </div>
+        <div class="text-header">
+            BORA MOTORCYCLE CLUB
+        </div>
+    </div>
+
+    <!-- NavBar -->
+
+    <div id="nav">
+        <a href="./index.html">Home</a>
+        <a href="./profile.html">Profile</a>
+        <a href="./visi-misi.html">Visi and Misi</a>
+        <div class="product-dropdown">
+            <Div class="product">
+                Products
+            </Div>
+            <div id="product-content">
+                <a href="./helm.html">Helm</a>
+                <a href="./jacket.html">Jacket</a>
+            </div>
+        </div>
+        <a href="./contact.html">Contact</a>
+        <a href="./about.html">About Us</a>
+        <div class="product-dropdown">
+            <div class="product">
+                Login
+            </div>
+            <div id="product-content">
+                <a href="./login.html">Sign In</a>
+                <a href="./sign-up.html">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products -->
+    <div id="box-container">
+        <div class="box-signup">
+            <div id="form-inner">
+                <form action="./login.html" onsubmit="return signUpForm(this)">
+
+                    <div class="form-title">
+                        <p>Member Sign Up</p>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-input" type="text" name="firstname" id="firstname">
+                        <label class="form-label" for="firstname">Firstname</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-input" type="text" name="lastname" id="lastname">
+                        <label class="form-label" for="lastname">Lastname</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-input" type="text" name="email" id="email">
+                        <label class="form-label" for="email">Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-input" type="text" name="username" id="username">
+                        <label class="form-label" for="username">Username</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-input" type="password" name="password" id="password">
+                        <label class="form-label" for="password">Password</label>
+                    </div>
+
+                    <div class="form-group-btn">
+                        <button class="btn-submit" type="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+        <div id="footer">
+            <div class="text-footer">
+                Copyright &copy; 2023 - BORA MOTORCYCLE CLUB - All Rights Reserved
+            </div>
+
+            <div class="sosmed">
+                <div class="sosmedItem">
+                    <a href="https://www.facebook.com/profile.php?id=100069020175227" target="_blank"><img
+                            src="./asset/Daco_1091.png" alt="facebook"></a>
+                </div>
+                <div class="sosmedItem">
+                    <a href="https://www.instagram.com/ELFA.mc/" target="_blank"><img src="./asset/Daco_818.png"
+                            alt="instagram"></a>
+                </div>
+                <div class="sosmedItem">
+                    <a href="https://twitter.com/ELFA.mc" target="_blank"><img
+                            src="./asset/toppng.com-twitter-logo-vector-grey-576x468.png" alt="twitter"></a>
+                </div>
+            </div>
+
+            <div class="right-text">
+                BORA MOTORCYCLE CLUB
+            </div>
+        </div>
+
+        <script src="./js/formValidation.js"></script>
+</body>
+
+</html>
